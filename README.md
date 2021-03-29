@@ -53,23 +53,35 @@ For exisiting video:
 
 <h1 align="center">:bar_chart: Results</h1>
 
+<h2>Example 1</h2>
 <p align="center">
   <br><br>
+  <img src = "samples/6.jpg" alt="Result_1">
+  <br>  
   <img src = "solutions/original_6.png" alt="Result_1">
+  <br>
   <img src = "solutions/generated_6.png" alt="Result_1">
   <br><br>
 </p>
 
+<h2>Example 2</h2>
 <p align="center">
   <br><br>
+  <img src = "samples/0.jpeg" alt="Result_2">
+  <br>
   <img src = "solutions/original_0.png" alt="Result_2">
+  <br>
   <img src = "solutions/generated_0.png" alt="Result_2">
   <br><br>
 </p>
-                                               
+ 
+<h2>Example 3</h2> 
 <p align="center">
   <br><br>
+  <img src = "samples/3.png" alt="Result_3">
+  <br>
   <img src = "solutions/original_3.png" alt="Result_3">
+  <br>
   <img src = "solutions/generated_3.png" alt="Result_3">
   <br><br>
 </p>
