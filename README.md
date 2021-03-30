@@ -56,8 +56,12 @@ For exisiting video:
 <h2>Example 1</h2>
 <p align="center">
   <br><br>
+  <h3>Input</h3>
+  <br>
   <img src = "samples/6.jpg" alt="Result_1">
-  <br>  
+  <br> 
+  <h3>Outputs</h3>
+  <br>
   <img src = "solutions/original_6.png" alt="Result_1">
   <br>
   <img src = "solutions/generated_6.png" alt="Result_1">
@@ -67,7 +71,11 @@ For exisiting video:
 <h2>Example 2</h2>
 <p align="center">
   <br><br>
+   <h3>Input</h3>
+  <br>
   <img src = "samples/0.jpeg" alt="Result_2">
+  <br>
+   <h3>Outputs</h3>
   <br>
   <img src = "solutions/original_0.png" alt="Result_2">
   <br>
@@ -78,7 +86,11 @@ For exisiting video:
 <h2>Example 3</h2> 
 <p align="center">
   <br><br>
+   <h3>Input</h3>
+  <br>
   <img src = "samples/3.png" alt="Result_3">
+  <br>
+   <h3>Outputs</h3>
   <br>
   <img src = "solutions/original_3.png" alt="Result_3">
   <br>
