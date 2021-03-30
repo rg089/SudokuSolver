@@ -66,13 +66,12 @@ while True:
                 else:
                     grid += "."
 
-        if not grid_already_detected(grid):
-            print("Original Grid\n")
-            solver.display(solver.grid_values(grid))
         answer = solver.solve(grid)
 
         if answer:
             if not grid_already_detected(grid):
+                print("Original Grid\n")
+                solver.display(solver.grid_values(grid))
                 print("\nSolution\n")
                 solver.display(answer)
             answer_digits = list(answer.values())
