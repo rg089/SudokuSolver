@@ -34,7 +34,7 @@ def recognize_grid(sudoku_gray, augment_size=20, num_models=5):
 
 
 def putTextOnGrid(sudoku_, answer_digits_, cell_width_, cell_height_):
-    font = cv2.FONT_HERSHEY_SIMPLEX
+    font = cv2.FONT_HERSHEY_SCRIPT_COMPLEX
     for i in range(9):
         for j in range(9):
             digit = answer_digits_[i * 9 + j]
@@ -91,6 +91,7 @@ imutils.showImage(sudoku, "Solved Sudoku")
 h, mask = cv2.findHomography(keypts_grid, keypts_img)
 just_grid = cv2.warpPerspective(sudoku, h, (width, height))
 output = cv2.add(img_without_grid, just_grid)
+cv2.drawContours(output, [keypts_img.reshape(4, 1, 2)], -1, (0, 255, 0), 2)
 imutils.showImage(output, "Final Solution")
 
 save_path = f"solutions\\original_{path_name}.png"

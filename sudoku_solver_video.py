@@ -77,7 +77,7 @@ while True:
                 solver.display(answer)
             answer_digits = list(answer.values())
 
-            font = cv2.FONT_HERSHEY_SIMPLEX
+            font = cv2.FONT_HERSHEY_SCRIPT_COMPLEX
             for i in range(9):
                 for j in range(9):
                     digit = answer_digits[i * 9 + j]
@@ -90,6 +90,8 @@ while True:
             h, mask = cv2.findHomography(keypts_grid, keypts_img)
             just_grid = cv2.warpPerspective(sudoku, h, (width, height))
             frame = cv2.add(img_without_grid, just_grid)
+            cv2.drawContours(frame, [keypts_img.reshape(4, 1, 2)], -1, (0, 255, 0), 2)
+
 
         else:
             print("Couldn't solve grid.")
