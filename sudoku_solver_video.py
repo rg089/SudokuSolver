@@ -25,7 +25,12 @@ def remove_temp():
 
 
 args = imutils.get_args(single_image=True, use_video=True)
-model = load_model("models\\digitnet_mnist_augment_decay_2.h5")
+useLeNet = True
+
+if useLeNet:
+    model = load_model("models\\lenet_mnist_augment_decay.h5")
+else:
+    model = load_model("models\\digitnet_mnist_augment_decay_4.h5")
 
 if args["video"]:
     cap = cv2.VideoCapture(args["video"])
@@ -55,7 +60,7 @@ while True:
                     pred = model.predict(digit)
                     pred = pred.sum(axis=0)
                     pred = np.argmax(pred)
-                    if isinstance(model, LeNet):
+                    if useLeNet:
                         pred += 1
                     grid += str(pred)
                 else:
